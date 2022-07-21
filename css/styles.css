@@ -1,8 +1,10 @@
 :root {
     --background-primary1: hsl(263, 55%, 52%);
     --background-primary2: hsl(217, 19%, 35%);
+    --background-primary2-50: hsl(217, 19%, 35%, 50%);
     --background-primary3: hsl(219, 29%, 14%);
     --background-neutral1: hsl(0, 0%, 81%);
+    --background-neutral1-50: hsl(0, 0%, 81%, 50%);
     --background-neutral2: hsl(210, 46%, 95%);
     --white: white;
     --primary-font: 'Barlow Semi Condensed', sans-serif;
@@ -12,6 +14,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Barlow Semi Condensed', sans-serif;
 }
 body {
     background-color: var(--background-neutral2);
@@ -33,34 +36,68 @@ main {
     border-radius: 0.5rem;
     padding: 2rem;
 }
-.user-testimonial:nth-of-type(1) {
+.one {
     background-color: var(--background-primary1);
     grid-area: user1;
     background-image: url('../images/bg-pattern-quotation.svg');
     background-repeat: no-repeat;
     background-position: top right 10%;
 }
-.user-testimonial:nth-of-type(2) {
+.two {
     background-color: var(--background-primary2);
     grid-area: user2;
 }
-.user-testimonial:nth-of-type(3) {
+.three {
     background-color: var(--white);
     grid-area: user3;
 }
-.user-testimonial:nth-of-type(4) {
+.four {
     background-color: var(--background-primary3);
     grid-area: user4;
 }
-.user-testimonial:nth-of-type(5) {
+.five {
     background-color: var(--white);
     grid-area: user5;
 }
+.profile-details {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.profile-pic {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+.one .profile-pic {
+    border: 3px solid var(--background-neutral1-50);
+}
+.four .profile-pic {
+    border: 3px solid var(--background-primary1);
+}
+.name, .verified {
+    font-size: 1rem;
+}
+.one .name, .two .name, .four .name {
+    color: var(--background-neutral1);
+}
+.one .verified, .two .verified, .four .verified {
+    color: var(--background-neutral1-50);
+}
+.three .name, .five .name {
+    color: var(--background-primary2);
+}
+.three .verified, .five .verified {
+    color: var(--background-primary2-50);
+}
 
 
+/* NEED TO WORK ON RESPONSIVENESS */
+/* SOMETHING LIKE GALLERY IN LI TUTE WITH ROW DENSE */
 
 
-@media (min-width: 400px){
+@media (min-width: 600px){
     main {
         margin: 15% 10%;
         grid-template-columns: repeat(4, 1fr);
