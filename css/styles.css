@@ -35,6 +35,9 @@ main {
 .user-testimonial {
     border-radius: 0.5rem;
     padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .one {
     background-color: var(--background-primary1);
@@ -76,8 +79,11 @@ main {
 .four .profile-pic {
     border: 3px solid var(--background-primary1);
 }
-.name, .verified {
+.name {
     font-size: 1rem;
+}
+.verified {
+    font-size: 0.8rem;
 }
 .one .name, .two .name, .four .name {
     color: var(--background-neutral1);
@@ -91,6 +97,25 @@ main {
 .three .verified, .five .verified {
     color: var(--background-primary2-50);
 }
+.testimonial-hero-text {
+    font-weight: 500;
+    margin: 1.5rem 0;
+}
+.testimonial-text {
+    line-height: 1.3;
+}
+.one .testimonial-hero-text, .two .testimonial-hero-text, .four .testimonial-hero-text {
+    color: var(--background-neutral2);
+}
+.one .testimonial-text, .two .testimonial-text, .four .testimonial-text {
+    color: var(--background-neutral1-50);
+}
+.three .testimonial-hero-text, .five .testimonial-hero-text {
+    color: var(--background-primary2);
+}
+.three .testimonial-text, .five .testimonial-text {
+    color: var(--background-primary2-50);
+}
 
 
 /* NEED TO WORK ON RESPONSIVENESS */
@@ -99,12 +124,16 @@ main {
 
 @media (min-width: 600px){
     main {
-        margin: 15% 10%;
+        margin: 5% 5%;
         grid-template-columns: repeat(4, 1fr);
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: repeat(2, minmax(300px, auto));
+        gap: 2rem;
         grid-template-areas: 
         "user1 user1 user2 user5"
         "user3 user4 user4 user5";
+    }
+    .user-testimonial{
+        padding: 2.5rem;
     }
 
 }
