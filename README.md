@@ -50,14 +50,13 @@ Mobile View
 - Flexbox
 - CSS Grid
 - Mobile-first workflow
-- 
 
 ### What I learned
 
-I learnt how to better utilise CSS grid areas to make webpage responsive. 
+I learnt how to better utilise CSS grid areas to make the webpage responsive. 
 I utilised three separate breakpoints to change the CSS grid area layout. 
 
-I also used CSS custom variables, which is very useful if changes need to be made to the color scheme. 
+I also used CSS custom variables, which are very useful when changes need to be made to the color scheme. 
 
 
 ### Continued development
