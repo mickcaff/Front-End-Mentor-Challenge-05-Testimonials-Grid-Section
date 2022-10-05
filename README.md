@@ -2,14 +2,18 @@
 
 This is a solution to the [Testimonials grid section challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
+#### Link
+
+- My Solution Live Site URL: [https://jade-brigadeiros-4e9d2b.netlify.app/](https://jade-brigadeiros-4e9d2b.netlify.app/)
+
 ## Table of contents
 
 - [Frontend Mentor - Testimonials grid section solution](#frontend-mentor---testimonials-grid-section-solution)
+      - [Link](#link)
   - [Table of contents](#table-of-contents)
   - [Overview](#overview)
     - [The challenge](#the-challenge)
     - [Solution Screenshots](#solution-screenshots)
-    - [Links](#links)
   - [My process](#my-process)
     - [Built with](#built-with)
     - [What I learned](#what-i-learned)
@@ -34,10 +38,6 @@ Mobile View
 
 <img src="./images/final-mobile.png" alt="Mobile view screenshot" width="250px">
 
-### Links
-
-- Solution URL: [https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7)
-- Live Site URL: [https://jade-brigadeiros-4e9d2b.netlify.app/](https://jade-brigadeiros-4e9d2b.netlify.app/)
 
 ## My process
 
